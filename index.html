@@ -39,7 +39,7 @@
    <section class="position-relative">
         <img src="./images/album-collage.jpg" class="img-fluid w-100" alt="Album Collage">
         <div class="top-50 start-50 translate-middle text-center text-dark">
-            <div class="mb-4">
+            <div class="mb-4 mt-4">
                 <img src="./images/vinyl_PNG5.png" class="img-fluid" alt="vinyl record" style="width: 150px;">
             </div>
             <h1 class="display-4">Welcome</h1>
@@ -48,8 +48,56 @@
    </section>
 
    <!-- Single Item Carousel Section -->
-   <section>
+   <section id="favorite-song" class="my-5">
+        <h2 class="text-center mb-4">My Favorite Songs</h2>
 
+        <div id="favoriteSongCarousel" class="carousel slide" data-interval="false">
+            <div class="carousel-inner">
+
+                <!-- Carousel Item 1 -->
+                 <div class="carousel-item active">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-md-4 text-center">
+                                <img src="./images/Shed-cover.jpg" class="img-fluid rounded" alt="Album cover">
+                            </div>
+                            <div class="col-md-8">
+                                <h3>Shed</h3>
+                                <p><strong>Artist:</strong> Title Flight</p>
+                                <p><strong>Album:</strong> Shed</p>
+                                <p><Strong>Year:</Strong> 2011</p>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+
+                 <!-- Carousel Item 2 -->
+                  <div class="carousel-item">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-md-4 text-center">
+                                <img src="./images/Alternative_cover.jpg" class="img-fluid rounded" alt="Album cover">
+                            </div>
+                            <div class="col-md-8">
+                                <h3>Alternative Outro</h3>
+                                <p><strong>Artist:</strong> Lucki</p>
+                                <p><strong>Album:</strong> Alternative Trap</p>
+                                <p><Strong>Year:</Strong> 2013</p>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+
+            <a class="carousel-control-prev" href="#favoriteSongCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon bg-dark p-4 rounded" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#favoriteSongCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon bg-dark p-4 rounded" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
    </section>
 </body>
 </html>
