@@ -18,16 +18,15 @@ const genreData = {
     `,
   },
   indie: {
-    imgSrc: 'images/Marietta.jpg',
-    albumName: 'Summer Death',
-    artist: 'Marietta',
-    year: '2013',
+    imgSrc: 'images/Couples-therapy.jpg',
+    albumName: 'Couples therapy',
+    artist: 'Marietta // Modern Baseball',
+    year: '2015',
     spotifyEmbed: `
       <iframe src="https://open.spotify.com/embed/track/3BepuSCt7eLXv98kbVIp7L?utm_source=generator" width="100%" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
     `,
   },
 };
-
 
 $(document).ready(function() {
   $('.dropdown-item').click(function(e) {
