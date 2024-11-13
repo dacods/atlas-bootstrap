@@ -10,6 +10,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="scripts/main.js"></script>
+    <link rel="stylesheet" href="./style.css">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
@@ -38,20 +39,20 @@
    </header>
    
    <!-- Banner Section -->
-   <section class="position-relative pb-5">
+   <section class="position-relative pb-5 te">
         <img src="./images/album-collage.jpg" class="img-fluid w-100" alt="Album Collage">
         <div class="top-50 start-50 translate-middle text-center text-dark">
             <div class="mb-4 mt-4">
                 <img src="./images/vinyl_PNG5.png" class="img-fluid" alt="vinyl record" style="width: 150px;">
             </div>
-            <h1 class="display-4">Welcome</h1>
-            <p class="lead">Explore my favorite songs and artist.</p>
+            <h1 class="display-4 text-white">Welcome</h1>
+            <p class="lead text-white">Explore my favorite songs and artist.</p>
         </div>
    </section>
 
    <!-- Single Item Carousel Section -->
    <section id="Songs" class="my-5 pt-5 pb-5">
-        <h2 class="text-center mb-4">My Favorite Songs</h2>
+        <h2 class="text-center mb-4 text-white pb-4">My Favorite Songs</h2>
 
         <div id="favoriteSongCarousel" class="carousel slide" data-interval="false">
             <div class="carousel-inner">
@@ -63,10 +64,10 @@
                                 <img src="./images/Shed-cover.jpg" class="img-fluid rounded" alt="Album cover">
                             </div>
                             <div class="col-md-8">
-                                <h3>Shed</h3>
-                                <p><strong>Artist:</strong> Title Flight</p>
-                                <p><strong>Album:</strong> Shed</p>
-                                <p><Strong>Year:</Strong> 2011</p>
+                                <h3 class="text-white">Shed</h3>
+                                <p class="text-white"><strong>Artist:</strong> Title Flight</p>
+                                <p class="text-white"><strong>Album:</strong> Shed</p>
+                                <p class="text-white"><Strong>Year:</Strong> 2011</p>
                             </div>
                         </div>
                     </div>
@@ -80,10 +81,10 @@
                                 <img src="./images/Alternative_cover.jpg" class="img-fluid rounded" alt="Album cover">
                             </div>
                             <div class="col-md-8">
-                                <h3>Alternative Outro</h3>
-                                <p><strong>Artist:</strong> Lucki</p>
-                                <p><strong>Album:</strong> Alternative Trap</p>
-                                <p><Strong>Year:</Strong> 2013</p>
+                                <h3 class="text-white">Alternative Outro</h3>
+                                <p class="text-white"><strong>Artist:</strong> Lucki</p>
+                                <p class="text-white"><strong>Album:</strong> Alternative Trap</p>
+                                <p class="text-white"><Strong>Year:</Strong> 2013</p>
                             </div>
                         </div>
                     </div>
@@ -103,14 +104,14 @@
 
    <!-- Multiple Item Carousel -->
     <section id="Artist" class="container my-5 pt-5 pb-5">
-            <h2 class="text-center mb-4">My Favorite Artists</h2>
+            <h2 class="text-center mb-4 pb-4 text-white">My Favorite Artists</h2>
             <!-- Desktop Slide -->
             <div id="artistCarouselDesktop" class="carousel slide d-none d-lg-block" data-ride="carousel" data-interval="false">
                 <div class="carousel-inner">
                     <div class="carousel-item active">                    
                         <div class="row">
                             <div class="col-lg-3">
-                                <div class="card h-100 text-center">
+                                <div class="card h-100 text-center bg-">
                                     <img src="./images/lucki.jpg" alt="Artist" class="card-img-top img-fluid">
                                     <div class="card-body">
                                         <h5 class="card-title">Lucki</h5>
@@ -326,7 +327,7 @@
     </section>
     <!-- Album Selection with Dropdown and Aside -->
     <section id="Music" class="container my-5 pt-5 pb-5">
-        <h2 class="text-center mb-4">Enjoy Some Music</h2>
+        <h2 class="text-center mb-4 text-white">Enjoy Some Music</h2>
         <div class="mb-4 text-center">
             <div class="dropdown d-inline-block">
                 <button class="btn btn-secondary dropdown-toggle" type="button" id="genreDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -342,9 +343,9 @@
         <div class="row">
             <div class="col-md-8 order-1 order-md-1">
                 <img id="albumArt" src="./images/album-placeholder.55ec627c119e.png" class="img-fluid rounded" alt="Album Art">
-                <h5 id="albumName" class="mt-3">Album</h5>
-                <p><strong>Artist:</strong><span id="artistName">Artist</span></p>
-                <p><strong>Year:</strong><span id="albumYear">Release Year</span></p>
+                <h5 id="albumName" class="mt-3 text-white">Album</h5>
+                <p class="text-white"><strong>Artist:</strong><span id="artistName">Artist</span></p>
+                <p class="text-white"><strong>Year:</strong><span id="albumYear">Release Year</span></p>
             </div>
             <aside class="col-md-4 mb-4 order-2 order-md-2">
                 <div id="spotifyPlayer"></div>
