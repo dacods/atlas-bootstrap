@@ -7,8 +7,9 @@
     <link href="https://fonts.googleapis.com/css?family=Coiny&display=swap" rel="stylesheet">
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="scripts/main.js"></script>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
@@ -243,11 +244,11 @@
                         </div>
                     </div>
                 </div>
-                <a class="carousel-control-prev d-lg-none" href="#artistCarouselTablet" role="button" data-slide="prev">
+                <a class="carousel-control-prev" href="#artistCarouselTablet" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon bg-dark p-4" aria-hidden="true"></span>
                     <span class="sr-only">Previous</span>
                 </a>
-                <a class="carousel-control-next d-lg-none" href="#artistCarouselTablet" role="button" data-slide="next">
+                <a class="carousel-control-next" href="#artistCarouselTablet" role="button" data-slide="next">
                     <span class="carousel-control-next-icon bg-dark p-4" aria-hidden="true"></span>
                     <span class="sr-only">Next</span>
                 </a>
@@ -312,15 +313,42 @@
                         </div>
                     </div>
                 </div>
-                <a class="carousel-control-prev d-lg-none" href="#artistCarouselMobile" role="button" data-slide="prev">
+                <a class="carousel-control-prev" href="#artistCarouselMobile" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon bg-dark p-4" aria-hidden="true"></span>
                     <span class="sr-only">Previous</span>
                 </a>
-                <a class="carousel-control-next d-lg-none" href="#artistCarouselMobile" role="button" data-slide="next">
+                <a class="carousel-control-next" href="#artistCarouselMobile" role="button" data-slide="next">
                     <span class="carousel-control-next-icon bg-dark p-4" aria-hidden="true"></span>
                     <span class="sr-only">Next</span>
                 </a>
             </div>  
+    </section>
+    <!-- Album Selection with Dropdown and Aside -->
+    <section id="select-song" class="container my-5">
+        <h2 class="text-center mb-4">Select A Song</h2>
+        <div class="mb-4 text-center">
+            <div class="dropdown d-inline-block">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="genreDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Select Genre
+                </button>
+                <div class="dropdown-menu" aria-labelledby="genreDropdown">
+                    <a class="dropdown-item" href="#" data-genre="rock">Rock</a>
+                    <a class="dropdown-item" href="#" data-genre="hiphop">Hip-Hop</a>
+                    <a class="dropdown-item" href="#" data-genre="indie">Indie</a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 order-1 order-md-1">
+                <img id="albumArt" src="" class="img-fluid rounded" alt="Album Art">
+                <h5 id="albumName" class="mt-3">Album</h5>
+                <p><strong>Artist:</strong><span id="artistName">Artist</span></p>
+                <p><strong>Year:</strong><span id="albumYear">Release Year</span></p>
+            </div>
+            <aside class="col-md-4 mb-4 order-2 order-md-2">
+                <div id="spotifyPlayer"></div>
+            </aside>
+        </div>
     </section>
 </body>
 </html>
