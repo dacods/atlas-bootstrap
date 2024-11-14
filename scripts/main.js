@@ -32,18 +32,20 @@ $(document).ready(function() {
   $('.dropdown-item').click(function(e) {
     e.preventDefault();
     const selectedGenre = $(this).data('genre');
-    const genreText = $(this).text();
+    if (selectedGenre) {
+      const genreText = $(this).text();
 
-    $('#genreDropdown').text(genreText);
+      $('#genreDropdown').text(genreText);
 
-    const data = genreData[selectedGenre];
-    if (data) {
-      $('#albumArt').attr('src', data.imgSrc);
-      $('#albumName').text(data.albumName);
-      $('#artistName').text(data.artist);
-      $('#albumYear').text(data.year);
+      const data = genreData[selectedGenre];
+      if (data) {
+        $('#albumArt').attr('src', data.imgSrc);
+        $('#albumName').text(data.albumName);
+        $('#artistName').text(data.artist);
+        $('#albumYear').text(data.year);
 
-      $('#spotifyPlayer').html(data.spotifyEmbed);
+        $('#spotifyPlayer').html(data.spotifyEmbed);
+      }
     }
   });
 });
