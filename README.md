@@ -33,6 +33,18 @@ For the multiple item carousel I made a carousel of some of my favorite artists.
 
 While on desktop no arrow is present, When shrinking the size down to tablet size the arrows will apear and 2 cards will be visible. Clicking the arrows will cycle through the 2 cards to the next 2 cards. Finally when on mobile size only one card at a time will be shown. When clicking the arrows each card will cycle through.
 
+## Dropdown
+
+![Screenshot](./images/Dropdown.png)
+
+For the Dropdown I added more information about the artists.
+
+## Aside
+
+![Screenshot](./images/Aside.png)
+
+For the Aside I recommended a band and used the aside tag to recommend a album of theirs.
+
 ## Free Section/ Drop Down Menus/ Aside Section
 
 ![Screenshot](./images/Free-section.png)
